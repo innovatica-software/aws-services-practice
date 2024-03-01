@@ -8,6 +8,7 @@ const morgan = require('morgan');
 const routes = require('./routes/index.js');
 const { PORT } = require('./config/variables.js');
 const { responseHandler } = require('./helper/responseHandler.js');
+const specs = require("./utils/swaggerApiDoc");
 require('./config/db.js');
  
 const app = express();
